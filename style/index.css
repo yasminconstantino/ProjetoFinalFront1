@@ -6,7 +6,7 @@ body.bindex {
     background-image: url("../imagens/patas1.png"); /* Caminho relativo atualizado */
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     height: 100vh; /* Garante que o fundo ocupe a tela toda */
 }
 
