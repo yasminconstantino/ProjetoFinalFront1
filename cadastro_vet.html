@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Veterinário | FindVet</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/cadVet.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="shortcut icon" type="imagex/png" href="imagens/logoFindVetTransparent.png">
+</head>
+<body>
+    <header class="header">
+        <div class="mheader">
+            <img class="logo" src="imagens/logoFindVetTransparent.png" alt="Imagem da logo da Find Vet">
+            <h1 class="logoH1">FindVet</h1>
+        </div>
+        <div class="menu">
+            <nav class="navi">
+                <a class="aaa" href="index.html">Início</a>
+                <h3>|</h3>
+                <a class="aaa" href="veterinarios.html">Veterinarios</a>
+                <h3>|</h3>
+                <a class="aaa" href="sobre_nos.html">Sobre Nós</a>
+            </nav>
+        </div>
+    </header>
+    <section class="mainsec vet">
+        <aside>
+            <img src="imagens/vett.jpeg" alt="Imagem de cachorro sendo examinado por uma veterinária">
+        </aside>
+        <main>
+            <form id="formVeterinario">
+                <h1>Cadastro de Veterinário</h1>
+                <h3>Dados Pessoais</h3>
+                <fieldset>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required><br>
+    
+                    <label for="crm">CRM:</label>
+                    <input type="text" id="crm" name="crm" required><br>
+    
+                    <label for="especialidade">Especialidade:</label>
+                    <input type="text" id="especialidade" name="especialidade" value="Clínico Geral"><br>
+    
+                    <label for="numeroTelefone">Telefone:</label>
+                    <input type="text" id="numeroTelefone" name="numeroTelefone" required><br>
+    
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required><br>
+                </fieldset>
+
+                <button type="submit">Cadastrar</button>
+
+            </form>
+        </main>
+    </section>
+    <footer>
+        <div class="contato">
+            <p>Contato:</p>
+            <p>FindVet, Canguçu</p>
+            <p>Rio Grande do Sul, Brasil- Código Postal: 96600-000</p>
+            <p>Telefone: (934) 934-5972</p>
+            <p>E-mail: info@findvet.magic</p>
+        </div>
+    </footer>
+    <script src="script/formVet.js"></script>
+</body>
+</html>
+
+

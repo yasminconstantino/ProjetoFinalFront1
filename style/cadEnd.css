@@ -1,0 +1,40 @@
+
+body {
+    background-color: #afb1ca;
+}
+
+aside {
+    background-color: #8285b4; /* Cor de fundo para o aside */
+}
+
+main {
+    background-color: #e0dee0;
+}
+
+
+
+h1 {
+    color: #1b1e50;
+}
+
+h3 {
+    margin-bottom: 20px;
+    color: #3d4747;
+}
+
+
+input {
+    border: 2px solid #e271b3;
+    background-color: #e6e2e5;
+}
+
+button {
+
+    background-color: #715596;
+    color: white;
+
+}
+
+button:hover {
+    background-color: #8285b4;
+}

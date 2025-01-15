@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Faz o conteúdo ocupar toda a altura da tela */
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex; /*deixou o aside e o main lado a lado*/
+    justify-content: center; /* deixou eles no centro h*/
+    align-items: center;/*deixou no centro v*/
+}
+
+aside {
+    width: 50%; /* 50% da largura da tela */
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.75rem; /*28px*/
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra no aside */
+    box-sizing: border-box;
+}
+
+aside img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px; /* Deixa as bordas arredondadas */
+}
+
+main {
+    width: 50%; /* 50% da largura da tela */
+    border-top-right-radius: 0.938rem; /*15px*/
+    border-bottom-right-radius: 0.938rem;
+    height: 100%;
+    display: flex; /*deixou o aside e o main lado a lado*/
+    justify-content: center; /* deixou eles no centro h*/
+    align-items: center;/*deixou no centro v*/
+    padding: 1.25rem; /*20px*/
+    box-sizing: border-box; /* Inclui o padding no tamanho total */
+}
+
+form {
+    width: 100%; /* O formulário ocupará toda a largura do `main` */
+    max-width: 400px; /* Define um limite para a largura */
+    text-align: left;
+    padding: 15px;
+}
+
+fieldset {
+    border: none;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 0.313rem;/*5px*/
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 1.25rem; /*20px*/
+}
+
+label {
+    display: block;
+    margin-bottom: 0.313rem;
+    font-weight: bold;
+}
+
+input {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 0.938rem; /*15px*/
+    border-radius: 0.938rem;/*15px*/
+}
+
+button, a {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 0.938rem;/*15px*/
+    cursor: pointer;
+    font-size: 1rem; /*16px*/
+}
+
+.aa {
+    padding-left: 10.375rem;
+    padding-right: 10.375rem;
+}
+
+.mainsec {
+    display: flex; /*deixou o aside e o main lado a lado*/
+    justify-content: center; /* deixou eles no centro h*/
+    align-items: center;/*deixou no centro v*/
+    margin-top: 10%;
+    position: relative;
+}
+
+.mainsec.tut{
+    padding-bottom: 0.938rem;/*15px*/
+}
+
+.mainsec.vet{
+    padding-bottom: 3rem;/*48px*/
+
+}
+
+.mainsec.end{
+    padding-bottom: 3.5rem;/*56px*/
+
+}
+
+@media (max-width: 1000px) {
+    .mainsec.tut{
+        padding-top: 8%;
+        padding-bottom: 10%;
+    }
+    
+    .mainsec.vet{
+        padding-top: 10%;
+        padding-bottom: 15%;
+    
+    }
+    
+    .mainsec.end{
+        padding-top: 5%;
+        padding-bottom: 10%;
+    
+    }
+  }

@@ -1,0 +1,97 @@
+body.abody {
+    background-image: url("../imagens/patas1.png"); /* Caminho relativo atualizado */
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh; /* Garante que o fundo ocupe a tela toda */
+  }
+
+main.mabout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #ece9e9;
+    width: 80%;
+    margin-top: 46%;
+    border-radius: 15px;
+}
+
+.imaa{
+    height: 90%;
+    width: 90%;
+    padding: 20px;
+}
+
+#imageGallery {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#imagesContainer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.tabout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ece9e9;
+    width: 80%;
+    margin-top: 1.5%;
+    margin-bottom: 2%;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.pabout {
+    width: 80%;
+    padding: 3%;
+    font-size: 1.375rem; /*22px*/
+}
+
+.aul{
+    width: 75%;
+    font-size: 1.25rem; /*20px*/
+    line-height: 1.5;
+}
+
+h2 {
+    color: #1068af;
+    padding: 1%;
+}
+
+span {
+    color: #dd1f8e;
+}
+
+h4 {
+    color: #6d2750;
+}
+
+.pata {
+    width: 8%;
+    padding: 1%;
+}
+
+@media (max-width: 1000px) {
+    main.mabout {
+        margin-top: 64%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    main.mabout {
+        margin-top: 130%;
+    }
+    #imageContainer {
+        flex-direction: column;
+    }
+  }

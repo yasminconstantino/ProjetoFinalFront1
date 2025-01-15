@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body.bht{
+    background-image: url("../imagens/patas1.png"); /* Caminho relativo atualizado */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh; /* Garante que o fundo ocupe a tela toda */
+}
+
+footer {
+    margin-bottom: 0;
+}
+
+.mht {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.endere {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 3%;
+    margin-right: 3%;
+    box-sizing: border-box;
+    background-color: #ccc;
+    border-radius: 0.938rem;/*15px*/
+}
+.warning {
+    width: 5%;
+    padding: 1%;
+}
+
+.wh, .wa {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #6d2750;
+}
+
+.wa {
+    text-decoration: none;
+    color: #dd1f8e;
+    font-weight: bold;
+}
+
+span {
+    color: #1068af;
+}
+
+.animal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1%;
+    box-sizing: border-box;
+    background-color: #ccc;
+    border-radius: 0.938rem;/*15px*/
+}
+
+.toptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 1%;
+}
+
+.sutop {
+    background-color: #e4e2e2;
+    padding: 1%;
+    border-radius: 0.938rem;/*15px*/
+    margin-right: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.top {
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tim {
+    width: 60%;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #174f58;
+}
+
+.ta {
+    font-size: 180px;
+}
+
+.arr {
+    width: 80%;
+}
+
+.arr:hover {
+    width: 90%;
+}
+
+.locali {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20%;
+}
+
+.tbutton {
+    background-color: #b0e1e9;
+    color: #6d2750;
+    padding: 1rem;
+    border-radius: 0.938rem;/*15px*/
+    border: none;
+    cursor: pointer;
+}
+
+.imlo {
+    width: 40px;
+}
+
+@media (max-width: 1000px) {
+    .endere {
+        margin-top: 15%;
+    }
+    .toptions {
+        display: flex;
+        flex-direction: column;
+    }
+    .tim {
+        width: 40%;
+    }
+    .sutop{
+        margin-bottom: 5%;
+    }
+    .arr {
+        width: 40%;
+    }
+    
+    .arr:hover {
+        width: 45%;
+    }
+    .locali{
+        margin-bottom: 10%;
+    }
+  }

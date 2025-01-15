@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+}
+
+body.bindex {
+    background-image: url("../imagens/patas1.png"); /* Caminho relativo atualizado */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh; /* Garante que o fundo ocupe a tela toda */
+}
+
+.mindex{
+  background-color: #ececec;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 0.938rem;/*15px*/
+}
+
+.mainy {
+    margin: 0;
+    margin-top: 2%;
+    width: 94%;
+    padding: 0;
+    border-radius: 0.938rem;/*15px*/
+    box-sizing: border-box;
+}
+
+.mainOptions {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.875rem;/*14px*/
+}
+
+.mainn {
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+}
+.mainOptions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem; /*20px*/
+    margin: 1.25rem; /*20px*/
+}
+
+a {
+    font-size: 1.8rem; /*32px*/
+    text-decoration: none;
+    color: #12334e;
+}
+
+
+.mainTutor {
+    background-color: #c5cac6;
+    border-top-left-radius: 0.938rem;/*15px*/
+    border-bottom-left-radius: 0.938rem;/*15px*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6.25rem; /*100px*/
+}
+
+.mainTutor:hover {
+    background-color: #748888;
+    transition-delay: 50ms;
+}
+
+.mainVet {
+    background-color: #e6a9c4;
+    border-top-right-radius: 0.938rem;/*15px*/
+    border-bottom-right-radius: 0.938rem;/*15px*/   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6.25rem; /*100px*/
+}
+
+.mainVet:hover {
+    background-color: #e788b3;
+    transition-delay: 50ms;
+}
+
+.mainim {
+    width: 10rem; /*160px*/
+    padding: 0.625rem; /*10px*/
+}
+
+/*animar simbolo vet*/
+@keyframes rotateVet {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(45deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(45deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  #vetImg {
+    animation: rotateVet 4s linear infinite; /* Adjust the duration as needed */
+  }
+
+
+/*animar simbolo tutor*/
+@keyframes rotateTutor {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-45deg); /* Girando para o outro lado */
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-45deg); /* Girando para o outro lado */
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+
+#tutorImg {
+    animation: rotateTutor 4s linear infinite; /* Adjust the duration as needed */
+  }
+
+@media (max-width: 1000px) {
+    .mainn{
+        margin-top: 16%;
+        width: 100%;
+    }
+    .mainTutor{
+        width: 20%;
+    }
+    .mainVet {
+        width: 20%;
+    }
+    .mainOptions {
+      margin-bottom: 15%;
+  }
+  }
+
+  @media (max-width: 500px) {
+    .mindex{
+      width: 100%;
+      margin-left: 0;
+    }
+    .mainn{
+        margin-top: 5%;
+        width: 100%;
+    }
+    .mainTutor{
+      flex-direction: column;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    .mainVet {
+      flex-direction: column;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+    .mainOptions {
+      margin-bottom: 10%;
+      flex-direction: column;
+      width: 100%;
+      margin-left: 0;
+      padding-left: 0;
+  }
+  .mainim {
+    width: 5rem; /*160px*/
+    padding: 0.625rem; /*10px*/
+}
+  }
